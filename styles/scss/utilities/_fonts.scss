@@ -1,0 +1,34 @@
+.text-align{
+	text-align: center;
+	&-left{
+		text-align: left;
+	}
+}
+
+.color{
+	&-base{
+		color:$color-base;
+	}
+	&-seagreen{
+		color:$color-seagreen;
+	}
+}
+
+.font{
+	&-info{
+		font-size: 1.5rem;
+	}
+}
+
+.font-lato{
+	font:.75rem $font-lato;
+	&-grey{
+	font:.75rem $font-lato;
+	color: $color-contact-info;
+	}
+}
+
+.portfolio-text{
+	color: $color-heading-grey;
+	font:.875rem/1.5rem $font-oxygen;
+}

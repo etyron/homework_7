@@ -1,0 +1,46 @@
+.carousel h2{
+	font-size: 3.75rem;
+	line-height: 4.5rem;
+}
+
+.section-title{
+	font:$font-light 2.25rem  $font-oxygen;
+	&-grey{
+		position: relative;
+		color:$color-heading-grey;
+		+ .section-text{
+			color: $color-heading-grey;
+			font:$font-light 1.125rem $font-oxygen;
+			padding: 0 14%;
+		}
+		&::after{
+			position:absolute;
+			content: '';
+			width:3.125rem;
+			height: .3125rem;
+			background: $color-grey;
+			bottom: 0;
+			left: 50%;
+			@include transform(translateX(-50%));
+		}
+	}
+	&-white{
+		position: relative;
+		color:$color-base;
+		+ .section-text{
+			color: $color-base;
+			font:$font-light 1.125rem $font-oxygen;
+			padding: 0 14%;
+		}
+		&::after{
+			position:absolute;
+			content: '';
+			width:3.125rem;
+			height: .3125rem;
+			background: $color-base;
+			bottom: 0;
+			left: 50%;
+			@include transform(translateX(-50%));
+		}
+	}
+}

@@ -1,0 +1,59 @@
+.welcome-section{
+	height: 14.25rem;
+	background:url("../../images/welcome-bg.jpg") no-repeat 50% 50%;
+	background-size: cover;
+	&-title{
+		color:$color-base;
+		font-size: 2.25rem;
+		text-align: left;
+		margin-bottom: 1.675rem;
+	}
+	&-container{
+		height: 14.25rem;
+		padding-bottom: $indents*5;
+	}
+}
+
+.list-nav-link{
+	color:$color-contact-info;
+	font:400 .75rem $font-oxygen;
+	li{
+		position: relative;
+		margin-right: 1.375rem;
+		&:last-child{
+			margin-right:0;
+		}
+		&:not(:last-child)::after{
+			position: absolute;
+			content: '/';
+			color:$color-contact-info;
+			right: -.6875rem;
+		}
+	}
+}
+
+.welcome-info{
+	position: relative;
+	padding-left: 1rem;
+	color:$color-contact-info;
+	font:400 .75rem $font-oxygen;
+	margin-right: 2rem;
+	&:last-child{
+		margin-right:0;
+	}
+}
+
+@each $welcome-info, $info-icon in (author : "\f2bd" , date : "\f017", wiews : "\f10d" ) {
+  .welcome-info-icon-#{$welcome-info}::before{
+  	position: absolute;
+    content: "#{$info-icon}";
+    font-family: fontawesome;
+	width: 1.25rem;
+	height: 1.25rem;
+	color:$color-contact-info;
+	background: $color-heading-grey;
+	border-radius: 50%;
+	left: -.675rem;
+	padding-top: .25rem;
+	}
+}

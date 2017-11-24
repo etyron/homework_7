@@ -1,0 +1,20 @@
+.section-bg{
+	&-black{
+		background: $color-black;
+	}
+	&-grey{
+		background: $color-section-grey;
+	}
+	&-seagreen{
+		background: $color-seagreen;
+	}
+	&-dark-grey{
+		background: $color-darkgrey;
+	}
+	&-dark-blue{
+		background: $color-blue;
+	}
+	&-grey-form{
+		background: $color-grey-form;
+	}
+}

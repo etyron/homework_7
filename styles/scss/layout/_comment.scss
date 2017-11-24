@@ -1,0 +1,72 @@
+.quote-container{
+	position: relative;
+	padding: 0 13%;
+	padding-top:4.75rem;
+	font-size: 1.5rem;
+	line-height: 1.875rem;
+	margin-bottom: 1rem;
+		&::before{
+		position:absolute;
+		content:'\f10e';
+		font-family: fontawesome;
+		color: $color-seagreen;
+    	font-size: 3rem;
+    	left:50%;
+    	top:0;
+    	@include transform(translateX(-50%));
+	}
+}
+
+.comment{
+	&-form{
+		margin-bottom: $indents*5;
+	}
+	&-title{
+	font: $font-bold 1.125rem $font-oxygen;
+   	color: $color-heading-grey;
+    text-align: left;
+    margin-bottom: $indents*2;
+	}
+	&-label{
+		width: 13.125rem;
+		font:$font-light .875rem/1.5rem $font-oxygen;
+		color: $color-heading-grey;
+	}
+}
+
+.list-add-comments{
+	li{
+		background: $color-base;
+		box-sizing: border-box;
+		font-family: $font-oxygen;
+		font-size: .875rem;
+		line-height: 1.5rem;
+		border:5px solid transparent;
+		padding: 1.625rem;
+		text-align: left;
+		margin-bottom: $indents*3;
+		&:nth-child(2n){
+			margin-left:1.875rem;
+		}
+		&:hover{
+			@include box-sizing(border-box);
+			border:5px solid $color-transparent;
+			.btn-reply{
+				display: block;
+			}
+		}
+	}
+	&-name{
+		font-weight: $font-bold;
+		color: $color-seagreen;
+	}
+	&-time{
+		margin-bottom: $indents*.5;
+		color:$color-contact-info;
+	}
+	&-text{
+		padding-top: $indents*.5;
+		border-top:1px solid $color-lightgrey; 
+		color: $color-heading-grey; 
+	}
+}

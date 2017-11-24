@@ -1,0 +1,106 @@
+button{
+	border: none;
+	&:focus{
+		box-shadow:none;
+		outline: none;
+	}
+}
+.btn{
+	font:$font-bold .75rem  $font-oxygen;
+	text-transform: uppercase;
+	padding: .5625rem .875rem;
+	min-width: 8.5rem;
+	&:focus{
+		box-shadow: none;
+	}
+	&-seagreen{
+		background: $color-seagreen;
+		color:$color-base;
+			&:hover{
+			border:.0625rem solid $color-seagreen;
+			background: transparent;
+			color:$color-seagreen;
+		}
+	}
+	&-transparent{
+		border:.0625rem solid $color-seagreen;
+		background: transparent;
+		color:$color-seagreen;
+		&:hover{
+			background:$color-seagreen;
+			color: $color-base;
+		}
+	}
+	&-transparent-white{
+		border:.0625rem solid $color-base;
+		background: transparent;
+		color:$color-base;
+	}
+	&-search{
+		background: transparent;
+		color: $color-input-border;
+	}
+	&-more{
+		background: transparent;
+		font:400 .75rem/1.5rem $font-oxygen;
+	}
+	&-filter{
+		background: transparent;
+		font:$font-light 0.875rem/1.5rem $font-oxygen;
+		color: $color-seagreen;
+		padding:.625rem .25rem;
+		&:active{
+			color: $color-heading-grey;
+		}
+	}
+	&-orange{
+		text-transform: uppercase;
+		border:3px solid $color-orange;
+		background: transparent;
+		color: $color-orange;
+		&:hover{
+			color:$color-base;
+			background: $color-orange;
+		}
+	}
+	&-post{
+		&-nav{
+			width: 2.5rem;
+			height: 2.5rem;
+			color: $color-orange;
+			font-size: .875rem;
+			border: 1px solid $color-transparent;
+			background: transparent;
+			&:hover{
+				border-color:$color-orange;
+			}
+		}
+	}
+	&-blog{
+		&-nav{
+			width: 3.125rem;
+			height: 3.125rem;
+			font-size: 1rem;
+			background: transparent;
+		}
+	}
+	&-comment{
+		font:$font-bold .6875rem  $font-oxygen;
+		text-transform: uppercase;
+		padding: .75rem .875rem;
+		background: $color-base;
+		color: $color-seagreen;
+		border: 3px solid $color-seagreen;
+		&:active{
+			color:$color-base;
+			background: $color-seagreen;
+		}
+	}
+	&-reply{
+		display: none;
+		background: transparent;
+		color:$color-seagreen;
+		font-size: .875rem;
+		font-family: $font-oxygen;
+	}
+}

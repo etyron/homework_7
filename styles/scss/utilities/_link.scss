@@ -1,0 +1,86 @@
+a{
+	text-decoration: none;
+	&:hover, &:visited, &:active{
+		text-decoration:none;
+	}
+	& .color-base{
+		:hover{
+			color:$color-base;
+		}
+	}
+}
+
+.link{
+	&-login{
+		position: relative;
+		&::before{
+			position:absolute;
+			content: "\f2be";
+			font-family: fontawesome;
+			@include transform(translateY(50%));
+			left:-1rem;
+		}
+	}
+	&-register{
+		position: relative;
+		&::before{
+			position:absolute;
+			content: "\f040";
+			font-family: fontawesome;
+			@include transform(translateY(50%));
+			left:-1rem;
+		}
+	}
+	&-post{
+		&-title{
+			color: $color-seagreen;
+			&:visited{
+				color:#6d0fae;
+			}
+		}
+		&-page{
+			color: $color-seagreen;
+			&:visited{
+				color:#6d0fae;
+			}
+		}
+	}
+	&-footer{
+		&-social{
+			color: $color-base;
+			font:400 .75rem $font-oxygen;
+			&:hover{
+				color:$color-base;
+			}
+		}
+	}
+}
+
+.post-wiews{
+	color: $color-seagreen;
+	&:visited{
+		color:#6d0fae;
+	}
+}
+
+.page-link{
+	color: $color-seagreen;
+	border: none;
+	background: transparent;
+	&:focus,&:hover{
+		background:transparent;
+		color: $color-seagreen;
+	}
+	&-active{
+		display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+		background: $color-grey;
+		color: $color-black;
+		&:focus,&:hover{
+			background: $color-grey;
+			color: $color-black;
+		}
+	}
+}

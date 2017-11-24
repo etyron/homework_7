@@ -1,0 +1,78 @@
+.carousel{
+	&-container{
+		@include calc(min-height, "100vh - 4.5rem");
+	}
+	&-welcome{
+		&-item{
+			&-1{
+				@include calc(min-height, "100vh - 4.5rem");
+				background: url("../../images/slide-1.jpg") no-repeat 50% 50%;
+				background-size: cover;
+			}
+			&-2{
+				@include calc(min-height, "100vh - 4.5rem");
+				background: url("../../images/slide-2.jpg") no-repeat 50% 50%;
+				background-size: cover;
+			}
+			&-3{
+				@include calc(min-height, "100vh - 4.5rem");
+				background: url("../../images/slide-3.jpg") no-repeat 50% 50%;
+				background-size: cover;
+			}
+			&-4{
+				@include calc(min-height, "100vh - 4.5rem");
+				background: url("../../images/slide-4.jpg") no-repeat 50% 50%;
+				background-size: cover;
+			}
+			&-5{
+				@include calc(min-height, "100vh - 4.5rem");
+				background: url("../../images/slide-5.jpg") no-repeat 50% 50%;
+				background-size: cover;
+			}
+		}
+	}
+	&-portfolio{
+		max-width: 43.125rem;
+		width: 100%;
+		min-height: 100vh;
+		background: $color-lightgrey;
+		margin-bottom: 1.875rem;
+		&-item{
+			&-1{
+				min-height: 100vh;
+				background: url("../../images/project-title-1.jpg") no-repeat 50% 50%;
+				background-size: cover;
+			}
+			&-2{
+				min-height: 100vh;
+				background: url("../../images/project-title-2.jpg") no-repeat 50% 50%;
+				background-size: cover;
+			}
+			&-3{
+				min-height: 100vh;
+				background: url("../../images/project-title-3.jpg") no-repeat 50% 50%;
+				background-size: cover;
+			}
+			&-4{
+				min-height: 100vh;
+				background: url("../../images/project-title-4.jpg") no-repeat 50% 50%;
+				background-size: cover;
+			}
+			&-5{
+				min-height: 100vh;
+				background: url("../../images/project-title-5.jpg") no-repeat 50% 50%;
+				background-size: cover;
+			}
+			&-6{
+				min-height: 100vh;
+				background: url("../../images/project-title-6.jpg") no-repeat 50% 50%;
+				background-size: cover;
+			}
+		}
+	}
+}
+
+.carousel-indicators .active{
+	background: $color-seagreen;
+}
+

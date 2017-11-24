@@ -1,0 +1,10 @@
+.jumbotron{
+	padding: 0;
+	margin-bottom: 0;
+	background: transparent;
+	&-margin{
+		&-right{
+			margin-right: 1.875rem;
+		}
+	}
+}

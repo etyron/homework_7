@@ -1,0 +1,82 @@
+input{
+	border:none;
+	&.search{
+		text-align: left;
+		position: relative;
+		padding:.5rem 1.5rem .5rem .625rem;
+		@include box-sizing(border-box);
+		height: 1.75rem;
+		width: 90%;
+		background: transparent;
+		color: $color-contact-info;
+	}
+	&.comment-field{
+		text-align: left;
+		padding: 10px;
+		font-size: .875rem;
+		color: $color-heading-grey;
+		width: 13.125rem;
+		height: 2.125rem;
+		border-top: 1px solid #9eb9c9;
+		margin-bottom: 1rem;
+	}
+}
+
+.form-search{
+	text-align: left;
+	@include display(flex);
+	@include justify-content(space-between);
+	border: 1px solid $color-input-border;
+	font:.75rem $font-lato;
+	color: $color-contact-info;
+	max-width: 13.125rem;
+	width: 100%;
+	&::after{
+		position:absolute;
+		content: "\f2be";
+		font-family: fontawesome;
+		@include transform(translateY(50%));
+		left:-1rem;
+	}
+}
+
+.portfolio-checkbox {
+	text-align: left;
+	position:relative;
+	padding-left:1.875rem;
+	margin-bottom: 1rem;
+	cursor: pointer;
+}
+.portfolio-checkbox input[type=checkbox] {
+	display:none;
+}
+.portfolio-checkbox label:after {
+	position: absolute;
+	content: '';
+	display:block;
+	height:12px;
+	width:14px;
+	outline:1px solid $color-orange;
+	top:0;
+	left:0;
+}
+.portfolio-checkbox input[type=checkbox]:checked + label:after {
+	outline:1px solid $color-orange;
+	width:14px;
+	height:12px;
+	content:'\f00c';
+	font-size: 1rem;
+	color: $color-orange;
+	font-family: fontawesome;
+	padding-left: 2px;
+}
+.comment-textarea{
+	text-align: left;
+	outline: none;
+	border: none;
+	border-top: 1px solid #9eb9c9;
+	padding: 10px;
+	font-size: .875rem;
+	color: $color-heading-grey;
+	margin-bottom: $indents*2.5;
+}

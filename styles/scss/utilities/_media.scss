@@ -1,0 +1,134 @@
+.container{
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .welcome-section-title{
+    margin-bottom: 0;
+  }
+  .section-indents-medium{
+    padding:$indents*6 0;
+  }
+  .navbar-toggler{
+    margin: 1rem 0;
+  }
+  .footer-columns{
+    margin:0 auto;
+    margin-bottom: 4.375rem;
+  }
+  .item-product-wrap{
+    margin: 0 auto;
+    margin-bottom: 3.125rem;
+  }
+}
+
+@media (max-width: 991px){
+  .section{
+    &-indents{
+      &-small{
+        padding: $indents*2.5 0;
+      }
+      &-medium{
+        padding:$indents*4 0;
+        &-post{
+          padding:$indents*3 0;
+        }
+        &-other{
+          padding: $indents*5 0;
+        }
+      }
+      &-footer{
+        padding: $indents*5 0 $indents*3;
+      }
+      &-features{
+        padding-top: $indents*3;
+      }
+    }
+  }
+  .navbar-toggler{
+    margin: 1rem 0;
+  }
+  .header-link-nav-indents{
+    margin-right: 1.5rem;
+    &:last-child{
+      margin-right:0;
+    }
+  }
+  .item-product-wrap{
+    margin:0 auto;
+  }
+  .btn{
+    min-width: 7.8125rem;
+    padding: .4rem;
+    font-size: .6rem;
+  }
+  .post{
+    margin: 0 auto;
+  }
+  .footer-columns{
+    margin:0 auto;
+    margin-bottom: 4.375rem;
+  }
+  .welcome-info{
+    margin-bottom: 1rem;
+  }
+  .welcome-section-title{
+    margin-bottom: 1.4rem;
+  }
+  .font-info{
+    margin-bottom: 1.2rem;
+  }
+  .team-item{
+    margin:0 auto;
+    margin-bottom: 1.2rem;
+  }
+  .item-features{
+    margin-bottom: 1.2rem;
+  }
+  .post-portfolio-form-indents{
+    margin-bottom: 0;
+  }
+  .indents-small{
+    margin-bottom: 1rem;
+  }
+   .post-single-wrap,.filter-post-works-wrap{
+    margin:0 auto;
+    margin-bottom: 1.25rem;
+  }
+  .comment-label{
+    width: 100%;
+    text-align: center;
+  }
+  input.comment-field{
+    width: 100%;
+  }
+  .comment-textarea{
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 370px){
+  .section-bg-black{
+    padding: 1rem 0;
+  }
+  .form-search{
+    margin-bottom: 1rem;
+  }
+  .header-link-nav-indents{
+    margin-left:1rem;
+  }
+  .navbar{
+    padding:1rem 0;
+  }
+  .portfolio-text{
+    margin-bottom: 1rem;
+  }
+  .indents-small{
+    margin-bottom: 0;
+  }
+  .footer-columns{
+    margin:0 auto;
+    margin-bottom: 4.375rem;
+  }
+
+}

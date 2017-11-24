@@ -1,0 +1,46 @@
+.indents{
+	&-large{
+		margin-bottom: $indents*10;
+	}
+	&-medium{
+		margin-bottom: $indents*5;
+	}
+	&-small{
+		margin-bottom: $indents*4;
+	}
+	&-mini{
+		margin-bottom: $indents*2;
+	}
+}
+
+.section{
+	&-indents{
+		&-small{
+		padding: $indents*5 0;
+		}
+		&-medium{
+		padding:$indents*10 0;
+			&-post{
+				padding:$indents*10 0 $indents*5;
+			}
+			&-other{
+				padding:$indents*5 0 $indents*10;
+			}
+		}
+		&-features{
+			padding: $indents*9 0 $indents*3.5;
+		}
+	}
+	&-title{
+	padding-bottom: $indents*3;
+	margin-bottom: $indents*5;
+	}
+	&-text{
+	margin-bottom: $indents*5;
+	}
+	&-form{
+		&-blog{
+			padding: $indents*4 0 $indents*7;
+		}
+	}
+}
